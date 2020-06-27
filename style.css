@@ -1,0 +1,181 @@
+   
+@keyframes moveIn {
+  0% {
+      opacity: 0;
+      transform: translateY(15rem);
+  }
+
+  80%{
+    opacity: 0.5;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+}
+
+80% {
+    transform: translateX(1rem);
+}
+
+100% {
+    opacity: 1;
+    transform: translate(0);
+}
+}
+
+
+
+
+
+
+
+
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#11396d;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  margin-bottom: auto;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #ffbc00;
+  border-radius: 5px;
+}
+
+#head{
+  margin-top: 3rem;
+  padding: 20px;
+  font-size: 9vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: #fff;
+  animation-name: moveIn;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    
+    
+  
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #ffbc00; }
+
+
+.btn-main, .btn-light, .btn-dark {
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 18px;
+  size: 15px;
+  padding: 1rem 4rem;
+  transition: all 0.8s;
+  border: none;
+  cursor: pointer; 
+
+}
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00; }
+
+.btn-light {
+  color: #333;
+  background-color: #d6d6d6; }
+
+.btn-dark {
+    color: #f4f4f4;
+    background-color: #333; }
+
+#recorder{
+  display: grid;
+  position: relative;
+  width:100%;
+  text-align: center;
+  margin:auto;
+  overflow:hidden;
+}
+
+ 
